@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "bbe43e73-fa5a-43a3-ac9f-f4ef026953ce",
+		"name": "tp API rest Python",
+		"description": "premier test avec postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29470433",
+		"_collection_link": "https://crimson-space-886585.postman.co/workspace/234bbe8d-9b36-4021-ac94-363b915521b5/collection/29470433-bbe43e73-fa5a-43a3-ac9f-f4ef026953ce?action=share&source=collection_link&creator=29470433"
+	},
+	"item": [
+		{
+			"name": "employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employeesWithID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/employees/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tracks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/tracks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"tracks"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

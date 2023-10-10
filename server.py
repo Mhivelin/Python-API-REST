@@ -89,6 +89,37 @@ api.add_resource(Employees, '/employees') # Route_1
 api.add_resource(Tracks, '/tracks') # Route_2
 api.add_resource(Employees_Name, '/employees/<employee_id>') # Route_3
 
+# -------------------------------------------
+# Exercice 1
+# ajouter une route pour afficher les albums
+# -------------------------------------------
+
+class Albums(Resource):
+    def get(self):
+        conn = db_connect.connect()
+        query = conn.execute("SELECT * FROM albums;")
+        result = {'data': [dict(zip(tuple (query.keys()) ,i)) for i in query.cursor]}
+        return jsonify(result)
+    
+api.add_resource(Albums, '/albums') # Route_4
+
+# -------------------------------------------
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 if __name__ == '__main__':
     app.run()
+
+
